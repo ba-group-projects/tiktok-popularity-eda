@@ -7,23 +7,26 @@ class CleanData:
     def __init__(self, data: pd.DataFrame):
         self.dfm = data
 
-    def add_share_rate(self):
-        self.dfm["shareRate"] = self.dfm["shareCount"] / self.dfm["playCount"]
+    def drop_useless_col(self, colArr):
+        self.dfm.drop(colArr, axis=1, inplace=True)     
 
-    def add_dig_rate(self):
-        self.dfm["digRate"] = self.dfm["diggCount"] / self.dfm["playCount"]
-
-    def add_comment_rate(self):
-        self.dfm["commentRate"] = self.dfm["commentCount"] / self.dfm["playCount"]
+    def rename_col(self, renameDict):
+        self.dfm.rename(columns=renameDict, inplace=True)  
 
     def unix_to_datetime(self):
         self.dfm['createTime'] = pd.to_datetime(self.dfm['createTime'], unit='s')
 
-    def drop_useless_col(self, colArr):
-        self.dfm.drop(colArr, axis=1, inplace=True)
+    def add_rate_col(self, numerator, denomenator, rateColName):
+        self.dfm[rateColName] = self.dfm[numerator] / self.dfm[denomenator]
 
-    def rename_col(self, renameDict):
-        self.dfm.rename(columns=renameDict, inplace=True)
+    # def add_share_rate(self):
+    #     self.dfm["shareRate"] = self.dfm["shareCount"] / self.dfm["playCount"]
+
+    # def add_dig_rate(self):
+    #     self.dfm["digRate"] = self.dfm["diggCount"] / self.dfm["playCount"]
+
+    # def add_comment_rate(self):
+    #     self.dfm["commentRate"] = self.dfm["commentCount"] / self.dfm["playCount"]
 
     def check_missing_data(self):
         columns = self.dfm.columns
@@ -34,7 +37,7 @@ class CleanData:
         else:
             for index in range(len(columns)):
                 if countNull[index] > 0:
-                    print(f'Missing Data: {columns[index]} column has {countNull[index]} missing values\n')
+                    print(f'Missing Data: {columns[index]} column has {countNull[index]} missing values\n') 
 
     def get_time_period(self):
         minDate = min(self.dfm['createTime'])
@@ -43,12 +46,12 @@ class CleanData:
         print(f'Data Time Period:\n=================\nStart Date: {minDate}\n  End Date: {maxDate}\n Timedelta: {timeDiff}')
 
     def process_the_data(self):
-        self.add_share_rate()
-        self.add_dig_rate()
-        self.add_comment_rate()
         self.unix_to_datetime()
         self.rename_col({"diggCount": "likeCount"})
-        self.drop_useless_col(['videoUrl', 'videoUrlNoWaterMark'])
+        self.drop_useless_col(['videoUrl', 'videoUrlNoWaterMark'])        
+        self.add_rate_col('shareCount', 'playCount', 'shareRate')
+        self.add_rate_col('likeCount', 'playCount', 'likeRate')
+        self.add_rate_col('commentCount', 'playCount', 'commentRate')
 
     def summary_of_data(self):
         self.check_missing_data()
@@ -65,4 +68,4 @@ if __name__ == '__main__':
     clean_data = CleanData(df)
     clean_data.process_the_data()
     clean_data.summary_of_data()
-    clean_data.save_cleaned_data()
+    # clean_data.save_cleaned_data()
