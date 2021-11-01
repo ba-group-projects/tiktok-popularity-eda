@@ -1,4 +1,5 @@
 import json
+import nltk
 import numpy as np
 import pandas as pd
 
@@ -11,7 +12,7 @@ class CleanData:
         self.dfm["shareRate"] = self.dfm["shareCount"] / self.dfm["playCount"]
 
     def add_dig_rate(self):
-        self.dfm["digRate"] = self.dfm["diggCount"] / self.dfm["playCount"]
+        self.dfm["likeRate"] = self.dfm["diggCount"] / self.dfm["playCount"]
 
     def add_comment_rate(self):
         self.dfm["commentRate"] = self.dfm["commentCount"] / self.dfm["playCount"]
@@ -28,7 +29,7 @@ class CleanData:
     def check_missing_data(self):
         columns = self.dfm.columns
         countNull = self.dfm.isnull().sum()
-        
+
         if sum(countNull) == 0:
             print('Missing Data:\n=============\nNone\n')
         else:
@@ -36,11 +37,20 @@ class CleanData:
                 if countNull[index] > 0:
                     print(f'Missing Data: {columns[index]} column has {countNull[index]} missing values\n')
 
+    def add_split_text(self):
+        self.dfm["split_text"] = df["text"].apply(lambda x: x[x.find("#")+1:].split("#"))
+
+    # def add_split_text_without_stop_words(self):
+    #     stop_words = nltk.corpus.stopwords.words("english")
+    #     df["text_list_drop_stop_words"] = df["split_text"].apply(
+    #         lambda x: [word for word in x if word not in stop_words])
+
     def get_time_period(self):
         minDate = min(self.dfm['createTime'])
         maxDate = max(self.dfm['createTime'])
         timeDiff = maxDate - minDate
-        print(f'Data Time Period:\n=================\nStart Date: {minDate}\n  End Date: {maxDate}\n Timedelta: {timeDiff}')
+        print(
+            f'Data Time Period:\n=================\nStart Date: {minDate}\n  End Date: {maxDate}\n Timedelta: {timeDiff}')
 
     def process_the_data(self):
         self.add_share_rate()
@@ -48,6 +58,8 @@ class CleanData:
         self.add_comment_rate()
         self.unix_to_datetime()
         self.rename_col({"diggCount": "likeCount"})
+        self.add_split_text()
+        # self.add_split_text_without_stop_words()
         self.drop_useless_col(['videoUrl', 'videoUrlNoWaterMark'])
 
     def summary_of_data(self):
