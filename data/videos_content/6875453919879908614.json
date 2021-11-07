@@ -1,0 +1,55 @@
+{
+  "segment_labels": [
+    {
+      "leisure": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:15.133333"
+        ],
+        "confidence": [
+          0.38075149059295654
+        ]
+      }
+    },
+    {
+      "song": {
+        "category_entities_description": [
+          "music"
+        ],
+        "positions": [
+          "0.0:15.133333"
+        ],
+        "confidence": [
+          0.671869158744812
+        ]
+      }
+    }
+  ],
+  "shot_labelshow": [
+    {
+      "leisure": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:15.133333"
+        ],
+        "confidence": [
+          0.38075149059295654
+        ]
+      }
+    },
+    {
+      "song": {
+        "shot_label_category_entities": [
+          "music"
+        ],
+        "positions": [
+          "0.0:15.133333"
+        ],
+        "confidence": [
+          0.671869158744812
+        ]
+      }
+    }
+  ],
+  "frame_labels": []
+}

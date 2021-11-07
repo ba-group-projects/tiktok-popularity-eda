@@ -1,0 +1,1 @@
+{"segment_labels": [{"food": {"category_entities_description": [], "positions": ["0.0:15.033333"], "confidence": [0.8122724294662476]}}], "shot_labelshow": [{"food": {"shot_label_category_entities": [], "positions": ["0.0:8.033333", "8.066666:15.033333"], "confidence": [0.9172570109367371, 0.5468601584434509]}}], "frame_labels": []}

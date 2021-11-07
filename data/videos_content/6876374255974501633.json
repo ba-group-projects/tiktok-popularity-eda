@@ -1,0 +1,339 @@
+{
+  "segment_labels": [
+    {
+      "gardening": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.40178918838500977
+        ]
+      }
+    },
+    {
+      "shrub": {
+        "category_entities_description": [
+          "plant"
+        ],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.7271232604980469
+        ]
+      }
+    },
+    {
+      "flora": {
+        "category_entities_description": [
+          "plant"
+        ],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.5376996994018555
+        ]
+      }
+    },
+    {
+      "grass": {
+        "category_entities_description": [
+          "plant"
+        ],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.8240233063697815
+        ]
+      }
+    },
+    {
+      "tree": {
+        "category_entities_description": [
+          "plant"
+        ],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.3972368836402893
+        ]
+      }
+    },
+    {
+      "hedge": {
+        "category_entities_description": [
+          "plant"
+        ],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.787430465221405
+        ]
+      }
+    },
+    {
+      "field": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.31429165601730347
+        ]
+      }
+    },
+    {
+      "nature": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.7514047622680664
+        ]
+      }
+    },
+    {
+      "landscaping": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.8082178235054016
+        ]
+      }
+    },
+    {
+      "shrub": {
+        "category_entities_description": [
+          "drink"
+        ],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.34851542115211487
+        ]
+      }
+    },
+    {
+      "lawn": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.7596418261528015
+        ]
+      }
+    },
+    {
+      "plant": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.8192228674888611
+        ]
+      }
+    },
+    {
+      "vegetation": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.4850057065486908
+        ]
+      }
+    },
+    {
+      "garden": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.5860053896903992
+        ]
+      }
+    }
+  ],
+  "shot_labelshow": [
+    {
+      "gardening": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.40178918838500977
+        ]
+      }
+    },
+    {
+      "shrub": {
+        "shot_label_category_entities": [
+          "plant"
+        ],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.7271232604980469
+        ]
+      }
+    },
+    {
+      "flora": {
+        "shot_label_category_entities": [
+          "plant"
+        ],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.5376996994018555
+        ]
+      }
+    },
+    {
+      "grass": {
+        "shot_label_category_entities": [
+          "plant"
+        ],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.8240233063697815
+        ]
+      }
+    },
+    {
+      "tree": {
+        "shot_label_category_entities": [
+          "plant"
+        ],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.31196892261505127
+        ]
+      }
+    },
+    {
+      "hedge": {
+        "shot_label_category_entities": [
+          "plant"
+        ],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.787430465221405
+        ]
+      }
+    },
+    {
+      "field": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.31429165601730347
+        ]
+      }
+    },
+    {
+      "nature": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.7699481844902039
+        ]
+      }
+    },
+    {
+      "landscaping": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.8082178235054016
+        ]
+      }
+    },
+    {
+      "shrub": {
+        "shot_label_category_entities": [
+          "drink"
+        ],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.35921037197113037
+        ]
+      }
+    },
+    {
+      "lawn": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.7596418261528015
+        ]
+      }
+    },
+    {
+      "plant": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.8508603572845459
+        ]
+      }
+    },
+    {
+      "vegetation": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.4850057065486908
+        ]
+      }
+    },
+    {
+      "garden": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:10.89001"
+        ],
+        "confidence": [
+          0.5860053896903992
+        ]
+      }
+    }
+  ],
+  "frame_labels": []
+}

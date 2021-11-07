@@ -1,0 +1,270 @@
+{
+  "segment_labels": [
+    {
+      "sport venue": {
+        "category_entities_description": [
+          "location",
+          "structure"
+        ],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.45582902431488037
+        ]
+      }
+    },
+    {
+      "team sport": {
+        "category_entities_description": [
+          "sports"
+        ],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.6002019643783569
+        ]
+      }
+    },
+    {
+      "physical exercise": {
+        "category_entities_description": [
+          "sports"
+        ],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.6903043985366821
+        ]
+      }
+    },
+    {
+      "ball game": {
+        "category_entities_description": [
+          "sports"
+        ],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.7434171438217163
+        ]
+      }
+    },
+    {
+      "games": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.6059064865112305
+        ]
+      }
+    },
+    {
+      "training": {
+        "category_entities_description": [
+          "service"
+        ],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.3875119090080261
+        ]
+      }
+    },
+    {
+      "player": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.8904725909233093
+        ]
+      }
+    },
+    {
+      "sports": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.9656779170036316
+        ]
+      }
+    },
+    {
+      "bat and ball games": {
+        "category_entities_description": [
+          "sports"
+        ],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.5681074261665344
+        ]
+      }
+    },
+    {
+      "physical fitness": {
+        "category_entities_description": [
+          "sports"
+        ],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.506709098815918
+        ]
+      }
+    }
+  ],
+  "shot_labelshow": [
+    {
+      "games": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.6059064865112305
+        ]
+      }
+    },
+    {
+      "player": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.8904725909233093
+        ]
+      }
+    },
+    {
+      "team sport": {
+        "shot_label_category_entities": [
+          "sports"
+        ],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.6002019643783569
+        ]
+      }
+    },
+    {
+      "training": {
+        "shot_label_category_entities": [
+          "service"
+        ],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.394586443901062
+        ]
+      }
+    },
+    {
+      "baseball": {
+        "shot_label_category_entities": [
+          "sports"
+        ],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.4323039948940277
+        ]
+      }
+    },
+    {
+      "physical exercise": {
+        "shot_label_category_entities": [
+          "sports"
+        ],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.6903043985366821
+        ]
+      }
+    },
+    {
+      "ball game": {
+        "shot_label_category_entities": [
+          "sports"
+        ],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.7434171438217163
+        ]
+      }
+    },
+    {
+      "sports": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.9678255319595337
+        ]
+      }
+    },
+    {
+      "sport venue": {
+        "shot_label_category_entities": [
+          "location",
+          "structure"
+        ],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.45582902431488037
+        ]
+      }
+    },
+    {
+      "physical fitness": {
+        "shot_label_category_entities": [
+          "sports"
+        ],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.506709098815918
+        ]
+      }
+    },
+    {
+      "bat and ball games": {
+        "shot_label_category_entities": [
+          "sports"
+        ],
+        "positions": [
+          "0.0:15.615615"
+        ],
+        "confidence": [
+          0.6555999517440796
+        ]
+      }
+    }
+  ],
+  "frame_labels": []
+}

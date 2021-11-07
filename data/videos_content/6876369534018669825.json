@@ -1,0 +1,174 @@
+{
+  "segment_labels": [
+    {
+      "food": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:20.754087"
+        ],
+        "confidence": [
+          0.933263897895813
+        ]
+      }
+    }
+  ],
+  "shot_labelshow": [
+    {
+      "dish": {
+        "shot_label_category_entities": [
+          "food"
+        ],
+        "positions": [
+          "13.046379:18.518518"
+        ],
+        "confidence": [
+          0.3509009778499603
+        ]
+      }
+    },
+    {
+      "facial expression": {
+        "shot_label_category_entities": [
+          "person"
+        ],
+        "positions": [
+          "0.0:7.27394",
+          "9.142475:11.311311"
+        ],
+        "confidence": [
+          0.34340453147888184,
+          0.4241299033164978
+        ]
+      }
+    },
+    {
+      "mcdonald's": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "13.046379:18.518518"
+        ],
+        "confidence": [
+          0.5092877149581909
+        ]
+      }
+    },
+    {
+      "hamburger": {
+        "shot_label_category_entities": [
+          "sandwich"
+        ],
+        "positions": [
+          "13.046379:18.518518"
+        ],
+        "confidence": [
+          0.3614956736564636
+        ]
+      }
+    },
+    {
+      "meal": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "13.046379:18.518518"
+        ],
+        "confidence": [
+          0.857295036315918
+        ]
+      }
+    },
+    {
+      "sandwich": {
+        "shot_label_category_entities": [
+          "food"
+        ],
+        "positions": [
+          "13.046379:18.518518"
+        ],
+        "confidence": [
+          0.4401579797267914
+        ]
+      }
+    },
+    {
+      "hair": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "18.551885:20.754087"
+        ],
+        "confidence": [
+          0.3491806983947754
+        ]
+      }
+    },
+    {
+      "cuisine": {
+        "shot_label_category_entities": [
+          "food"
+        ],
+        "positions": [
+          "13.046379:18.518518"
+        ],
+        "confidence": [
+          0.48540884256362915
+        ]
+      }
+    },
+    {
+      "lunch": {
+        "shot_label_category_entities": [
+          "meal"
+        ],
+        "positions": [
+          "13.046379:18.518518"
+        ],
+        "confidence": [
+          0.3903634250164032
+        ]
+      }
+    },
+    {
+      "eating": {
+        "shot_label_category_entities": [
+          "person"
+        ],
+        "positions": [
+          "13.046379:18.518518",
+          "18.551885:20.754087"
+        ],
+        "confidence": [
+          0.8775842785835266,
+          0.31442660093307495
+        ]
+      }
+    },
+    {
+      "food": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "7.307307:9.109109",
+          "13.046379:18.518518",
+          "18.551885:20.754087"
+        ],
+        "confidence": [
+          0.7243251800537109,
+          0.9888476729393005,
+          0.5362628102302551
+        ]
+      }
+    },
+    {
+      "fast food": {
+        "shot_label_category_entities": [
+          "food"
+        ],
+        "positions": [
+          "13.046379:18.518518"
+        ],
+        "confidence": [
+          0.6681604981422424
+        ]
+      }
+    }
+  ],
+  "frame_labels": []
+}

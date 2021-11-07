@@ -1,0 +1,1 @@
+{"segment_labels": [], "shot_labelshow": [{"song": {"shot_label_category_entities": ["music"], "positions": ["3.470136:6.439773"], "confidence": [0.48902595043182373]}}, {"arm": {"shot_label_category_entities": ["human body"], "positions": ["6.473139:8.541875", "9.943276000000001:11.711711"], "confidence": [0.4005780816078186, 0.4122832417488098]}}], "frame_labels": []}

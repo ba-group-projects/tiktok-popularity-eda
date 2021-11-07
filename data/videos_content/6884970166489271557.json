@@ -1,0 +1,347 @@
+{
+  "segment_labels": [
+    {
+      "physical exercise": {
+        "category_entities_description": [
+          "sports"
+        ],
+        "positions": [
+          "0.0:21.2"
+        ],
+        "confidence": [
+          0.9593157768249512
+        ]
+      }
+    },
+    {
+      "physical fitness": {
+        "category_entities_description": [
+          "sports"
+        ],
+        "positions": [
+          "0.0:21.2"
+        ],
+        "confidence": [
+          0.9715558886528015
+        ]
+      }
+    },
+    {
+      "muscle": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:21.2"
+        ],
+        "confidence": [
+          0.37827882170677185
+        ]
+      }
+    },
+    {
+      "exercise equipment": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:21.2"
+        ],
+        "confidence": [
+          0.9359728693962097
+        ]
+      }
+    },
+    {
+      "exercise machine": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:21.2"
+        ],
+        "confidence": [
+          0.882609486579895
+        ]
+      }
+    },
+    {
+      "calf": {
+        "category_entities_description": [
+          "human body"
+        ],
+        "positions": [
+          "0.0:21.2"
+        ],
+        "confidence": [
+          0.5283368229866028
+        ]
+      }
+    },
+    {
+      "bodybuilding": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:21.2"
+        ],
+        "confidence": [
+          0.6579205393791199
+        ]
+      }
+    },
+    {
+      "human leg": {
+        "category_entities_description": [
+          "human body"
+        ],
+        "positions": [
+          "0.0:21.2"
+        ],
+        "confidence": [
+          0.6069021224975586
+        ]
+      }
+    },
+    {
+      "weight training": {
+        "category_entities_description": [
+          "physical exercise"
+        ],
+        "positions": [
+          "0.0:21.2"
+        ],
+        "confidence": [
+          0.75853031873703
+        ]
+      }
+    },
+    {
+      "room": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:21.2"
+        ],
+        "confidence": [
+          0.8740784525871277
+        ]
+      }
+    },
+    {
+      "sports": {
+        "category_entities_description": [],
+        "positions": [
+          "0.0:21.2"
+        ],
+        "confidence": [
+          0.3822903037071228
+        ]
+      }
+    },
+    {
+      "arm": {
+        "category_entities_description": [
+          "human body"
+        ],
+        "positions": [
+          "0.0:21.2"
+        ],
+        "confidence": [
+          0.42592817544937134
+        ]
+      }
+    },
+    {
+      "gym": {
+        "category_entities_description": [
+          "room"
+        ],
+        "positions": [
+          "0.0:21.2"
+        ],
+        "confidence": [
+          0.9376632571220398
+        ]
+      }
+    }
+  ],
+  "shot_labelshow": [
+    {
+      "calf": {
+        "shot_label_category_entities": [
+          "human body"
+        ],
+        "positions": [
+          "0.0:11.3",
+          "11.333333:21.2"
+        ],
+        "confidence": [
+          0.5283368229866028,
+          0.5283368229866028
+        ]
+      }
+    },
+    {
+      "bodybuilding": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:11.3",
+          "11.333333:21.2"
+        ],
+        "confidence": [
+          0.6579205393791199,
+          0.6579205393791199
+        ]
+      }
+    },
+    {
+      "weight training": {
+        "shot_label_category_entities": [
+          "physical exercise"
+        ],
+        "positions": [
+          "0.0:11.3",
+          "11.333333:21.2"
+        ],
+        "confidence": [
+          0.7591343522071838,
+          0.75853031873703
+        ]
+      }
+    },
+    {
+      "physical exercise": {
+        "shot_label_category_entities": [
+          "sports"
+        ],
+        "positions": [
+          "0.0:11.3",
+          "11.333333:21.2"
+        ],
+        "confidence": [
+          0.938453197479248,
+          0.962323784828186
+        ]
+      }
+    },
+    {
+      "physical fitness": {
+        "shot_label_category_entities": [
+          "sports"
+        ],
+        "positions": [
+          "0.0:11.3",
+          "11.333333:21.2"
+        ],
+        "confidence": [
+          0.9544194340705872,
+          0.9715558886528015
+        ]
+      }
+    },
+    {
+      "muscle": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:11.3",
+          "11.333333:21.2"
+        ],
+        "confidence": [
+          0.3641781508922577,
+          0.3798287510871887
+        ]
+      }
+    },
+    {
+      "exercise equipment": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:11.3",
+          "11.333333:21.2"
+        ],
+        "confidence": [
+          0.9025033712387085,
+          0.9204736351966858
+        ]
+      }
+    },
+    {
+      "exercise machine": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:11.3",
+          "11.333333:21.2"
+        ],
+        "confidence": [
+          0.882609486579895,
+          0.8412883281707764
+        ]
+      }
+    },
+    {
+      "human leg": {
+        "shot_label_category_entities": [
+          "human body"
+        ],
+        "positions": [
+          "0.0:11.3",
+          "11.333333:21.2"
+        ],
+        "confidence": [
+          0.6062880158424377,
+          0.6062880158424377
+        ]
+      }
+    },
+    {
+      "gym": {
+        "shot_label_category_entities": [
+          "room"
+        ],
+        "positions": [
+          "0.0:11.3",
+          "11.333333:21.2"
+        ],
+        "confidence": [
+          0.9274314045906067,
+          0.9376632571220398
+        ]
+      }
+    },
+    {
+      "arm": {
+        "shot_label_category_entities": [
+          "human body"
+        ],
+        "positions": [
+          "0.0:11.3",
+          "11.333333:21.2"
+        ],
+        "confidence": [
+          0.42592817544937134,
+          0.5197393298149109
+        ]
+      }
+    },
+    {
+      "room": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:11.3",
+          "11.333333:21.2"
+        ],
+        "confidence": [
+          0.8740784525871277,
+          0.8740784525871277
+        ]
+      }
+    },
+    {
+      "sports": {
+        "shot_label_category_entities": [],
+        "positions": [
+          "0.0:11.3",
+          "11.333333:21.2"
+        ],
+        "confidence": [
+          0.34173935651779175,
+          0.38348767161369324
+        ]
+      }
+    }
+  ],
+  "frame_labels": []
+}

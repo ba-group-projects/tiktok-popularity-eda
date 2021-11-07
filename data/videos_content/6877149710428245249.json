@@ -1,0 +1,1 @@
+{"segment_labels": [{"song": {"category_entities_description": ["music"], "positions": ["0.0:8.566666"], "confidence": [0.9650648236274719]}}], "shot_labelshow": [{"song": {"shot_label_category_entities": ["music"], "positions": ["0.0:1.333333", "1.366666:8.566666"], "confidence": [0.9470072388648987, 0.9575939178466797]}}], "frame_labels": []}

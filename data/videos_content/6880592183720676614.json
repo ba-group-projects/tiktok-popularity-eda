@@ -1,0 +1,1 @@
+{"segment_labels": [{"dress": {"category_entities_description": ["clothing"], "positions": ["0.0:15.0"], "confidence": [0.33933648467063904]}}], "shot_labelshow": [{"dress": {"shot_label_category_entities": ["clothing"], "positions": ["0.0:15.0"], "confidence": [0.33933648467063904]}}], "frame_labels": []}
