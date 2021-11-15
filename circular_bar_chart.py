@@ -1,5 +1,6 @@
 import json
 import numpy as np
+from numpy.core.fromnumeric import size
 import pandas as pd
 from clean import CleanData
 import matplotlib.pyplot as plt
@@ -46,19 +47,23 @@ def draw_circular_bar(ax, x, y, title, lower_limit, curve_position, text_positio
         # _x = _x + np.pi/30
         _x_second = _x
         _x = _x*np.pi/30
-        rotation = np.rad2deg(_x+np.pi/15+np.pi/30)
         if _x <= np.pi/2:
             ax.bar(x=_x, height=_y, width=np.pi/30,
-                   color='#FBD1B7', bottom=lower_limit)
+                   color='#fcbcbb', bottom=lower_limit,edgecolor='white')
         elif _x > np.pi/2 and _x <= np.pi:
             ax.bar(x=_x, height=_y, width=np.pi/30,
-                   color='#FEE9B2', bottom=lower_limit)
+                   color='#c2d794', bottom=lower_limit,edgecolor='white')
         elif _x > np.pi and _x <= np.pi*3/2:
             ax.bar(x=_x, height=_y, width=np.pi/30,
-                   color='#F9FCE1', bottom=lower_limit)
+                   color='#99dee1', bottom=lower_limit,edgecolor='white')
         else:
             ax.bar(x=_x, height=_y, width=np.pi/30,
-                   color='#D3F6F3', bottom=lower_limit)
+                   color='#e3bfff', bottom=lower_limit,edgecolor='white')
+        if _x_second <= 30:
+            ax.text((_x_second-0.25)/30*np.pi, _y+lower_limit*1.1,rotation=-np.rad2deg((_x_second-0.25)/30*np.pi+np.pi/2*3),s ="{:.3%}".format(_y),size=6 ,ha = "left",rotation_mode='anchor',va="center") #TODO
+        else:
+            ax.text((_x_second-0.25)/30*np.pi, _y+lower_limit*1.1,rotation=-np.rad2deg((_x_second-0.25)/30*np.pi+np.pi/2),s ="{:.3%}".format(_y),size=6 ,ha ="right",rotation_mode='anchor',va ="center") #TODO
+        
     # draw the curve
     x = np.linspace(np.pi/30+0.15*np.pi, np.pi/2 - np.pi/40, 100)
     y = np.full(len(x), curve_position)
@@ -70,19 +75,19 @@ def draw_circular_bar(ax, x, y, title, lower_limit, curve_position, text_positio
     ax.text(x=np.pi/2-np.pi/12, y=text_position, s='<15 s', rotation=-
             54, rotation_mode='anchor', va='center', ha='right', size=8)
     # # curve between 15s to 30s
-    x = np.linspace(np.pi/2 + np.pi/40, np.pi - np.pi/40, 100)
+    x = np.linspace(np.pi/2 + np.pi/20, np.pi - np.pi/40, 100)
     y = np.full(len(x), curve_position)
     ax.plot(x, y, color='black', linewidth=1, alpha=0.8)  # draw the curve
     ax.text(x=np.pi-np.pi/10, y=text_position, s='15-30 s', rotation=-
             144, rotation_mode='anchor', va='center', ha='right', size=8)
     # # curve between 30s to 45s
-    x = np.linspace(np.pi + np.pi/40, 3*np.pi/2-np.pi/40, 100)
+    x = np.linspace(np.pi + np.pi/20, 3*np.pi/2-np.pi/40, 100)
     y = np.full(len(x), curve_position)
     ax.plot(x, y, color='black', linewidth=1, alpha=0.8)  # draw the curve
     ax.text(x=np.pi + np.pi/10, y=text_position, s='31-45 s', rotation=144,
             rotation_mode='anchor', va='center', ha='left', size=8)
     # # curve between 45s to 60s
-    x = np.linspace(3*np.pi/2+np.pi/40, 2*np.pi-np.pi/40, 100)
+    x = np.linspace(3*np.pi/2+np.pi/20, 2*np.pi-np.pi/40, 100)
     y = np.full(len(x), curve_position)
     ax.plot(x, y, color='black', linewidth=1, alpha=0.8)  # draw the curve
     ax.text(x=3*np.pi/2 + np.pi/10, y=text_position, s='46-60 s',
@@ -97,7 +102,7 @@ def draw_circular_bar(ax, x, y, title, lower_limit, curve_position, text_positio
 draw_circular_bar(ax1, avg_df["videoMeta.duration"],
                   avg_df["shareRate"], "Share Rate", 0.003, 0.003,0.0025)
 draw_circular_bar(ax2, avg_df["videoMeta.duration"],
-                  avg_df["likeRate"], "Like Rate", 0.08, 0.08,0.065)
+                  avg_df["likeRate"], "Like Rate", 0.098, 0.098,0.076)
 draw_circular_bar(ax3, avg_df["videoMeta.duration"],
                   avg_df["commentRate"], "Comment Rate", 0.0025, 0.0025,0.002)
 plt.axis('off')
