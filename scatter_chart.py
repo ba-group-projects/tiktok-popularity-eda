@@ -54,7 +54,7 @@ ax.set_ylim(100,100000000)
 ax.plot(x,[y_temp.min(),y_temp.min()], color='#e3bfff', linestyle='--',linewidth=2)
 
 # add legend
-legend = ax.legend(loc='lower right',fontsize=12,facecolor = '#bcbdbd')
+legend = ax.legend(loc='lower right',fontsize=12,facecolor = '#f7f7f7')
 
 
 # add title
@@ -82,6 +82,8 @@ ax.annotate("", xy=(x[0],10000),  xycoords='data', xytext=(x[-1],10000),
                 )
 ax.text(datetime.datetime(2020,11,1),y= 5000,fontsize=10,s="3 months")
 plt.show()
+
+# %%
 
 # %%
 
