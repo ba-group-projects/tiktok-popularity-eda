@@ -19,15 +19,6 @@ class CleanData:
     def add_rate_col(self, numerator, denomenator, rateColName):
         self.dfm[rateColName] = self.dfm[numerator] / self.dfm[denomenator]
 
-    # def add_share_rate(self):
-    #     self.dfm["shareRate"] = self.dfm["shareCount"] / self.dfm["playCount"]
-
-    # def add_dig_rate(self):
-    #     self.dfm["digRate"] = self.dfm["diggCount"] / self.dfm["playCount"]
-
-    # def add_comment_rate(self):
-    #     self.dfm["commentRate"] = self.dfm["commentCount"] / self.dfm["playCount"]
-
     def check_missing_data(self):
         columns = self.dfm.columns
         countNull = self.dfm.isnull().sum()
