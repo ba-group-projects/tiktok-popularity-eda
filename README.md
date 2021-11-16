@@ -16,7 +16,7 @@ The structure of the code is as follows:
 - utils
   - \_\_init\_\_.py
   - clean.py
-- 
+- figure(the figure we got)
 - smm635.ipynb # main code
 - requirements.txt
 - README.md
