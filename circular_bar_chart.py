@@ -59,10 +59,11 @@ def draw_circular_bar(ax, x, y, title, lower_limit, curve_position, text_positio
         else:
             ax.bar(x=_x, height=_y, width=np.pi/30,
                    color='#e3bfff', bottom=lower_limit,edgecolor='white')
-        if _x_second <= 30:
-            ax.text((_x_second-0.25)/30*np.pi, _y+lower_limit*1.1,rotation=-np.rad2deg((_x_second-0.25)/30*np.pi+np.pi/2*3),s ="{:.3%}".format(_y),size=6 ,ha = "left",rotation_mode='anchor',va="center") #TODO
-        else:
-            ax.text((_x_second-0.25)/30*np.pi, _y+lower_limit*1.1,rotation=-np.rad2deg((_x_second-0.25)/30*np.pi+np.pi/2),s ="{:.3%}".format(_y),size=6 ,ha ="right",rotation_mode='anchor',va ="center") #TODO
+        if _x_second in[14,27,32,50]:
+            if _x_second <= 30:
+                ax.text((_x_second-0.25)/30*np.pi, _y+lower_limit*1.1,rotation=-np.rad2deg((_x_second-0.25)/30*np.pi+np.pi/2*3),s ="{:.3%}".format(_y),size=6 ,ha = "left",rotation_mode='anchor',va="center") #TODO
+            else:
+                ax.text((_x_second-0.25)/30*np.pi, _y+lower_limit*1.1,rotation=-np.rad2deg((_x_second-0.25)/30*np.pi+np.pi/2),s ="{:.3%}".format(_y),size=6 ,ha ="right",rotation_mode='anchor',va ="center") #TODO
         
     # draw the curve
     x = np.linspace(np.pi/30+0.15*np.pi, np.pi/2 - np.pi/40, 100)
