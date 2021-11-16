@@ -21,3 +21,6 @@ The structure of the code is as follows:
 - requirements.txt
 - README.md
 
+## Known issues
+1. 
+
