@@ -22,5 +22,5 @@ The structure of the code is as follows:
 - README.md
 
 ## Known issues
-1. 
+1. google-translator has some environment issues needed to be care about. If the packages in requirements.txt cannot be installed successfully, you may not be able to reproduce the translator functions. But you can directly read the file frome the data folder.(Linux is suggested when using googletrans rather than Mac OS)
 
